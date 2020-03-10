@@ -5,3 +5,35 @@
 @import 'normalize.scss';
 @import 'base.scss';
 @import 'header.scss';
+
+.header {
+  display: flex;
+}
+
+.header__site-logo {
+  margin-right: auto;
+}
+
+.hero__title {
+  font-size: 35px;
+  line-height: 1.6;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.hero__description {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.hero__link {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  text-decoration: none;
+  color: #e9ac38;
+}
