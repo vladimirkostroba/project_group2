@@ -1,0 +1,236 @@
+.clear {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+@media (min-width: 350px) and (max-width: 759px) {
+  .directions__blocks {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .directions__list {
+    width: 280px;
+    justify-content: flex-start;
+  }
+
+  .directions__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.directions__list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.directions__title {
+  font-size: 20px;
+  color: #272727;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.directions__blocks-item {
+  border-radius: 5px;
+  background-color: #fafafa;
+  padding-top: 27px;
+  padding-bottom: 56px;
+  margin-bottom: 12px;
+  width: 280px;
+}
+
+.directions__blocks-item:hover {
+  background-color: #e9ac38;
+  filter: drop-shadow(1.5px 2.598px 4px rgba(1, 1, 1, 0.1));
+}
+
+.directions__blocks-item:hover .directions__blocks-description {
+  color: #ffffff;
+}
+
+.directions__blocks-item:hover .directions__blocks-age {
+  color: #ffffff;
+}
+
+.directions__blocks-item:hover .directions__blocks-age::before {
+  color: #ffffff;
+}
+
+.directions__blocks-item:hover .directions__blocks-age::after {
+  background-image: url(../images/icons/Arrow1.png);
+}
+
+.directions__blocks-item:last-child {
+  margin-bottom: 0;
+}
+
+.directions__blocks-title {
+  font-size: 25px;
+  color: #272727;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.directions__blocks-description {
+  width: 221px;
+  height: 44px;
+  font-size: 16px;
+  color: #444444;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.directions__blocks-age {
+  font-size: 30px;
+  color: #e9ac38;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.directions__blocks-age::before {
+  content: 'років';
+  position: absolute;
+  font-size: 13px;
+  color: #e9ac38;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+  top: 138px;
+  left: 123px;
+  transform: translate(-20%, -50%);
+}
+
+.directions__blocks-age::after {
+  content: '';
+  background-image: url(../images/icons/Arrow.png);
+  width: 19px;
+  height: 13px;
+  position: absolute;
+  top: 194px;
+  left: 45px;
+}
+
+.directions__link {
+  display: inline-block;
+  padding-left: 45px;
+  position: relative;
+}
+
+.directions__icon {
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+  padding: 6px;
+  background-color: #e9ac38;
+  border-radius: 100%;
+}
+
+/* TABLET */
+@media (min-width: 760px) and (max-width: 1100px) {
+  .container {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .directions__blocks {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .directions__blocks-item {
+    margin-bottom: 0;
+    position: relative;
+    width: 310px;
+    flex-basis: 50%;
+    // background-color: red;
+  }
+
+  .directions__blocks-item:nth-child(odd):before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 250px;
+    left: 240px;
+    top: 5px;
+    border-right: 1px dashed #ddd;
+  }
+
+  .directions__blocks-item:nth-child(n + 3):after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 280px;
+    height: 10px;
+    left: 5px;
+    top: 0px;
+    border-top: 1px dashed #ddd;
+  }
+
+  .directions__blocks-item:hover .directions__blocks-age::after {
+    background-image: url(../images/icons/arrow-hover.png);
+    width: 39px;
+    height: 13px;
+  }
+}
+
+/* PC */
+
+@media screen and (min-width: 1100px) {
+  .directions__blocks {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .directions__blocks-item {
+    border-radius: 0;
+    margin-bottom: 0;
+    width: 326px;
+  }
+
+  .directions__blocks-item:hover {
+    border-radius: 5px;
+  }
+
+  .directions__blocks-item:hover .directions__blocks-age::after {
+    background-image: url(../images/icons/arrow-hover.png);
+    width: 39px;
+    height: 13px;
+  }
+
+  .directions__blocks-item:nth-child(-n + 3) {
+    border-right: 1px dashed #ddd;
+  }
+
+  .directions__blocks-item:nth-child(-n + 3):hover {
+    border: none;
+  }
+}
