@@ -1,1 +1,237 @@
+.button {
+  width: 30px;
+  height: 20px;
+  background-color: transparent;
+  border: transparent;
+  background-image: url(../images/baner/buger.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: transparent;
+}
 
+.header {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__site-logo {
+  margin-right: auto;
+}
+
+.hero__title {
+  line-height: 1.2;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.hero__description {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.hero__link {
+  line-height: 1.2;
+  text-decoration: none;
+  color: #e9ac38;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header {
+    width: 280px;
+  }
+
+  .baner {
+    min-height: 600px;
+    background-image: url(../images/baner/mob.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding-top: 18px;
+  }
+
+  .hero {
+    margin-top: 290px;
+  }
+
+  .hero__title {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .hero__description {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .hero__description {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    );
+  }
+
+  .hero__link {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header {
+    width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .baner {
+    min-height: 600px;
+    background-image: url(../images/baner/tablet.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 20px;
+  }
+
+  .hero__title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .hero {
+    margin-top: 355px;
+  }
+
+  .hero__description {
+    width: 390px;
+    font-size: 24px;
+    text-align: left;
+    padding-left: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    );
+  }
+
+  .hero__description::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/baner/vertical-line.png);
+    background-repeat: no-repeat;
+    left: 1px;
+    width: 2px;
+    height: 48px;
+    margin-left: 20px;
+    margin-top: 4px;
+  }
+
+  .hero__link {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .container {
+    max-width: 1234px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .baner {
+    min-height: 970px;
+    min-width: 1920px;
+    background-image: url(../images/baner/desctop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 30px;
+  }
+
+  .header {
+    width: 1820px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero {
+    margin-top: 575px;
+  }
+
+  .hero__title {
+    font-size: 65px;
+    margin-bottom: 45px;
+  }
+
+  .hero__description {
+    width: 490px;
+    height: 100px;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 65px;
+    padding-top: 15px;
+    position: relative;
+
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    );
+  }
+
+  .hero__link {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  .hero__description::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/baner/vertical-line.png);
+    background-repeat: no-repeat;
+    left: 1px;
+    width: 3px;
+    height: 65px;
+    margin-left: 40px;
+    margin-top: 4px;
+  }
+}
