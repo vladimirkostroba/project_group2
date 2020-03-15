@@ -43,15 +43,15 @@
 
 .directions__title {
   font-size: 20px;
-  color: #272727;
-  font-family: 'Open Sans', sans-serif;
+  color: $color-title;
+  font-family: $font-title;
   font-weight: 700;
   margin-left: 10px;
 }
 
 .directions__blocks-item {
   border-radius: 5px;
-  background-color: #fafafa;
+  background-color: $color-bcdirections;
   padding-top: 27px;
   padding-bottom: 56px;
   margin-bottom: 12px;
@@ -59,20 +59,20 @@
 }
 
 .directions__blocks-item:hover {
-  background-color: #e9ac38;
+  background-color: $color-orange;
   filter: drop-shadow(1.5px 2.598px 4px rgba(1, 1, 1, 0.1));
 }
 
 .directions__blocks-item:hover .directions__blocks-description {
-  color: #ffffff;
+  color: $color-background;
 }
 
 .directions__blocks-item:hover .directions__blocks-age {
-  color: #ffffff;
+  color: $color-background;
 }
 
 .directions__blocks-item:hover .directions__blocks-age::before {
-  color: #ffffff;
+  color: $color-background;
 }
 
 .directions__blocks-item:hover .directions__blocks-age::after {
@@ -85,8 +85,8 @@
 
 .directions__blocks-title {
   font-size: 25px;
-  color: #272727;
-  font-family: 'Ubuntu', sans-serif;
+  color: $color-title;
+  font-family: $font-text;
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -95,16 +95,16 @@
   width: 221px;
   height: 44px;
   font-size: 16px;
-  color: #444444;
-  font-family: 'Ubuntu', sans-serif;
+  color: $color-fordescription;
+  font-family: $font-text;
   font-weight: 400;
   margin-bottom: 40px;
 }
 
 .directions__blocks-age {
   font-size: 30px;
-  color: #e9ac38;
-  font-family: 'Open Sans', sans-serif;
+  color: $color-orange;
+  font-family: $font-title;
   font-weight: 700;
 }
 
@@ -112,8 +112,8 @@
   content: 'років';
   position: absolute;
   font-size: 13px;
-  color: #e9ac38;
-  font-family: 'Ubuntu', sans-serif;
+  color: $color-orange;
+  font-family: $font-text;
   font-weight: 400;
   text-decoration: underline;
   top: 138px;
@@ -140,9 +140,9 @@
 .directions__icon {
   width: 18px;
   height: 18px;
-  fill: #fff;
+  fill: $color-icon;
   padding: 6px;
-  background-color: #e9ac38;
+  background-color: $color-orange;
   border-radius: 100%;
 }
 
@@ -176,7 +176,7 @@
     height: 250px;
     left: 260px;
     top: 5px;
-    border-right: 1px dashed #ddd;
+    border-right: 1px dashed $color-border;
   }
 
   .directions__blocks-item:nth-child(n + 3):after {
@@ -187,7 +187,7 @@
     height: 10px;
     left: 5px;
     top: 0px;
-    border-top: 1px dashed #ddd;
+    border-top: 1px dashed $color-border;
   }
 
   .directions__blocks-item:hover .directions__blocks-age::after {
@@ -230,7 +230,7 @@
   }
 
   .directions__blocks-item:nth-child(-n + 3) {
-    border-right: 1px dashed #ddd;
+    border-right: 1px dashed $color-border;
   }
 
   .directions__blocks-item:nth-child(-n + 3):hover {
