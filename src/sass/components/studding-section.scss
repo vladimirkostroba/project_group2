@@ -1,5 +1,5 @@
 .container {
-  max-width: 281px;
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -23,7 +23,7 @@
   padding: 0;
   margin-top: 52px;
   margin-bottom: 35px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
 }
 
@@ -43,6 +43,7 @@
   text-align: center;
   padding: 0;
   margin: 0;
+  padding-left: 45px;
 }
 
 .icon {
@@ -98,6 +99,10 @@
 /*Tablet*/
 
 @media screen and (min-width: 768px) {
+  .studding {
+    margin-bottom: 45px;
+  }
+
   .container {
     max-width: 660px;
     padding-left: 15px;
@@ -119,11 +124,6 @@
     margin-right: 18px;
     background-repeat: no-repeat;
     background-image: url(../images/icon2.png);
-  }
-
-  .studding__list {
-    margin-right: 44px;
-    margin-left: 44px;
   }
 
   .description {
@@ -155,8 +155,12 @@
 /*Laptop*/
 
 @media screen and (min-width: 1100px) {
+  .studding {
+    margin-bottom: 0;
+  }
+
   .container {
-    max-width: 1234px;
+    max-width: 1300px;
     padding-left: 20px;
     padding-right: 20px;
     text-align: start;
@@ -165,16 +169,18 @@
   .studding {
     background-color: $color-background-laptop;
     padding-bottom: 109px;
+    padding-top: 109px;
   }
 
   .studding__title {
-    margin-top: 109px;
+    margin-top: 0;
     margin-bottom: 66px;
   }
 
   .studding__list {
     margin-right: 0;
     margin-left: 0;
+    padding-left: 0;
   }
 
   .description {
