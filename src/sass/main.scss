@@ -1,0 +1,15 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import 'normalize.scss';
+@import 'base.scss';
+
+//UTILS
+@import './ulils/utils.scss';
+@import './vars.scss';
+
+@import 'normalize.scss';
+
+//COMPONENTS
+@import './component/description-section.scss';
