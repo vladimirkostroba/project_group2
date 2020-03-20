@@ -11,6 +11,63 @@
   background-color: #222222;
 }
 
+.footer-bottom {
+  background-color: #151515;
+}
+
+.footer__info-description {
+  font-family: var($font-text);
+  font-size: 14px;
+  color: #9699a6;
+  line-height: 1.6;
+}
+
+.footer__contacts-link {
+  font-family: var($font-text);
+  font-size: 14px;
+  color: #9699a6;
+  line-height: 1.6;
+}
+
+.footer__social-button {
+  font-family: var($font-title);
+  font-size: 16px;
+  color: #fff;
+  width: 190px;
+  height: 40px;
+  background-color: #e9ac38;
+  border: none;
+  border-radius: 3px;
+}
+
+.footer__social-button:hover,
+.footer__social-button:focus {
+  transform: scale(1.1);
+  transition: transform 250ms linear;
+}
+
+.footer__social_icon:hover,
+.footer__social_icon:focus {
+  transform: scale(1.1);
+  transition: transform 250ms linear;
+}
+
+.footer__social-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.jurisdiction-list__link {
+  font-family: var($font-text);
+  font-size: 14px;
+  color: #9699a6;
+  line-height: 1.6;
+}
+
+.jurisdiction-list__link:hover,
+.jurisdiction-list__link:focus {
+  color: #fff;
+}
+
 .list {
   margin: 0;
   padding: 0;
@@ -35,54 +92,16 @@
     margin-bottom: 35px;
   }
 
-  .footer__info-description {
-    font-family: var($font-text);
-    font-size: 14px;
-    color: #9699a6;
-    line-height: 1.6;
-  }
-
-  .footer__contacts-link {
-    font-family: var($font-text);
-    font-size: 14px;
-    color: #9699a6;
-    line-height: 1.6;
-  }
-
   .footer__social {
     margin-top: 35px;
   }
 
   .footer__social-button {
     margin-bottom: 35px;
-    font-family: var($font-title);
-    font-size: 16px;
-    color: #fff;
-    width: 190px;
-    height: 40px;
-    background-color: #e9ac38;
-    border: none;
-    border-radius: 3px;
-  }
-
-  .footer__social-button:hover,
-  .footer__social-button:focus {
-    transform: scale(1.1);
-    transition: transform 250ms linear;
   }
 
   .footer__social-list {
     display: flex;
-  }
-
-  .footer__social-item:not(:last-child) {
-    margin-right: 18px;
-  }
-
-  .footer__social_icon:hover,
-  .footer__social_icon:focus {
-    transform: scale(1.1);
-    transition: transform 250ms linear;
   }
 
   //
@@ -99,15 +118,69 @@
     color: #9699a6;
     line-height: 1.6;
   }
-
-  .jurisdiction-list__link:hover,
-  .jurisdiction-list__link:focus {
-    color: #fff;
-  }
 }
 
 @media (min-width: 768px) {
+  .footer-top {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .footer__logo {
+    margin-bottom: 30px;
+  }
+
+  .footer__info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .footer__info-adress {
+    display: flex;
+  }
+
+  .footer__social-list {
+    display: flex;
+    margin-top: 22px;
+  }
+
+  .jurisdiction-list {
+    display: flex;
+  }
+
+  .footer-bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .jurisdiction-list__item:not(:last-child) {
+    margin-right: 35px;
+  }
 }
 
 @media (min-width: 1100px) {
+  .footer__logo {
+    margin-bottom: 30px;
+  }
+
+  .footer__social {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .footer__social-list {
+    margin: 0;
+    margin-left: 160px;
+  }
+
+  .footer__info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .jurisdiction-list__item:not(:last-child) {
+    margin-right: 75px;
+  }
 }
