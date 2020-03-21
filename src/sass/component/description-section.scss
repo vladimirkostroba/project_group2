@@ -2,12 +2,6 @@ body {
   margin: 0px;
 }
 
-.list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .container {
   max-width: 280px;
   padding-right: 20px;
@@ -21,10 +15,14 @@ body {
   width: 280px;
   height: 320px;
   content: '';
-  background-image: url(./src/images/children.png);
+  background-image: url(../images/children.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.description__cont {
+  margin-top: 55px;
 }
 
 @media screen and (min-width: 768px) {
@@ -36,10 +34,10 @@ body {
 
   .description__content--image {
     display: inline-block;
-    width: 660px;
+    width: 620px;
     height: 320px;
     content: '';
-    background-image: url(./src/images/img.png);
+    background-image: url(../images/img.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -128,10 +126,10 @@ body {
 
   .description__content--image {
     display: inline-block;
-    width: 649px;
+    width: 600px;
     height: 397px;
     content: '';
-    background-image: url(./src/images/img2.png);
+    background-image: url(../images/img2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -152,6 +150,7 @@ body {
 
 .program {
   margin-top: 30px;
+  margin-bottom: 52px;
   border-radius: 9px;
   background-color: $color-lilac;
   padding: 24px;
