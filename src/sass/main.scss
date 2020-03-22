@@ -4,13 +4,6 @@
 
 @import 'normalize.scss';
 @import 'base.scss';
-
-//UTILS
-@import './ulils/utils.scss';
-@import './vars.scss';
-
-@import 'normalize.scss';
-@import 'container.scss';
-
-//COMPONENTS
-@import './component/description-section.scss';
+@import 'containers.scss';
+@import 'vars.scss';
+@import 'footer.scss';
