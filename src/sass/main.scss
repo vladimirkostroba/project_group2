@@ -4,5 +4,13 @@
 
 @import 'normalize.scss';
 @import 'base.scss';
+<<<<<<< HEAD
 @import './vars.scss';
 @import './components/studding-section.scss';
+=======
+@import 'containers.scss';
+@import 'vars.scss';
+@import './component/description-section.scss';
+@import './ulils/utils.scss';
+@import 'footer.scss';
+>>>>>>> master
