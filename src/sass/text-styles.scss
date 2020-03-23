@@ -3,7 +3,7 @@
   align-items: center;
   margin: 0;
   font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var($font-title);
   text-transform: uppercase;
 }
 
@@ -14,7 +14,7 @@
   margin: 0;
   margin-bottom: 30px;
   font-size: 17px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: var($font-text);
   font-weight: 700;
 }
 
@@ -25,7 +25,7 @@
   padding-right: 22.5px;
   font-size: 14px;
   line-height: 1.25;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: var($font-text);
   font-weight: 400;
   color: #464646;
 }
