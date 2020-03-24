@@ -15,7 +15,7 @@ body {
   width: 280px;
   height: 320px;
   content: '';
-  background-image: url(../images/children.png);
+  background-image: url(../images/description-section/children.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -37,7 +37,7 @@ body {
     width: 620px;
     height: 320px;
     content: '';
-    background-image: url(../images/img.png);
+    background-image: url(../images/description-section/children_2x.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -76,7 +76,7 @@ body {
   width: 18px;
   height: 13px;
   color: $color-orange;
-  background-image: url(../images/quote1.png);
+  background-image: url(../images/description-section/quote1.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
@@ -129,7 +129,7 @@ body {
     width: 600px;
     height: 397px;
     content: '';
-    background-image: url(../images/img2.png);
+    background-image: url(../images/description-section/children_3x.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -195,7 +195,7 @@ body {
   content: '';
   width: 60px;
   height: 2px;
-  background-image: url(../images/verticalline-mobile.png);
+  background-image: url(../images/description-section/verticalline-mobile.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -207,7 +207,7 @@ body {
     height: 100px;
     left: 80px;
     top: 50px;
-    background-image: url(../images/verticalline-desktop.png);
+    background-image: url(../images/description-section/verticalline-desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -229,7 +229,7 @@ body {
     height: 60px;
     left: 120px;
     top: 50px;
-    background-image: url(../images/verticalline-desktop.png);
+    background-image: url(../images/description-section/verticalline-desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
