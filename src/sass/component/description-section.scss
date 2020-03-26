@@ -48,7 +48,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1350px) {
   .container {
     max-width: 1300px;
     padding-left: 0;
@@ -100,7 +100,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1350px) {
   .description__cont {
     display: flex;
     flex-direction: row-reverse;
@@ -177,7 +177,7 @@ body {
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .program__text {
     font-size: 20px;
     letter-spacing: 1px;
@@ -212,7 +212,7 @@ body {
     background-size: contain;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1350px) {
   .program {
     position: relative;
     font-size: 25px;
