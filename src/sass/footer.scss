@@ -18,6 +18,11 @@
   font-size: 14px;
   color: #9699a6;
   line-height: 1.6;
+
+  &:hover,
+  &:focus {
+    color: #e9ac38;
+  }
 }
 
 .footer__social-button {
@@ -29,18 +34,20 @@
   background-color: #e9ac38;
   border: none;
   border-radius: 3px;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    transition: transform 250ms linear;
+  }
 }
 
-.footer__social-button:hover,
-.footer__social-button:focus {
-  transform: scale(1.1);
-  transition: transform 250ms linear;
-}
-
-.footer__social_icon:hover,
-.footer__social_icon:focus {
-  transform: scale(1.1);
-  transition: transform 250ms linear;
+.footer__social_icon {
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    transition: transform 250ms linear;
+  }
 }
 
 .footer__social-item:not(:last-child) {
@@ -52,11 +59,11 @@
   font-size: 14px;
   color: #9699a6;
   line-height: 1.6;
-}
 
-.jurisdiction-list__link:hover,
-.jurisdiction-list__link:focus {
-  color: #e9ac38;
+  &:hover,
+  &:focus {
+    color: #e9ac38;
+  }
 }
 
 .list {
@@ -149,6 +156,49 @@
   .jurisdiction-list__item:not(:last-child) {
     margin-right: 35px;
   }
+
+  .button-up {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #333333;
+    cursor: pointer;
+
+    bottom: 87%;
+    left: 85%;
+
+    transition: transform 300ms ease;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url(../images/btn-up.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 15px;
+      height: 15px;
+      z-index: 1;
+
+      top: 50%;
+      left: 50%;
+
+      transform: translate3d(-50%, -50%, 0);
+    }
+
+    transform: translate3d(0, 0, 0) scale(1);
+    box-shadow: 0 3px 7px 0 rgba(5, 5, 5, 0.6);
+  }
+
+  .footer-top {
+    position: relative;
+  }
 }
 
 @media (min-width: 1350px) {
@@ -174,5 +224,48 @@
 
   .jurisdiction-list__item:not(:last-child) {
     margin-right: 75px;
+  }
+
+  .button-up {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #333333;
+    cursor: pointer;
+
+    top: 85%;
+    left: 95%;
+
+    transition: transform 300ms ease;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url(../images/btn-up.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 15px;
+      height: 15px;
+      z-index: 1;
+
+      top: 50%;
+      left: 50%;
+
+      transform: translate3d(-50%, -50%, 0);
+    }
+
+    transform: translate3d(0, 0, 0) scale(1);
+    box-shadow: 0 3px 7px 0 rgba(5, 5, 5, 0.6);
+  }
+
+  .footer-top {
+    position: relative;
   }
 }
