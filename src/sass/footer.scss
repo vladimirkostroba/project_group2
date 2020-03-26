@@ -69,7 +69,7 @@
   text-decoration: none;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 350px) and (max-width: 767px) {
   .footer-top {
     padding-top: 45px;
     padding-bottom: 35px;
