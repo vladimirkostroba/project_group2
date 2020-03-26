@@ -237,4 +237,12 @@
   .directions__blocks-item:nth-child(-n + 3):hover {
     border: none;
   }
+
+  .directions__blocks-item:nth-child(odd):before {
+    content: none;
+  }
+
+  .directions__blocks-item:nth-child(n + 3):after {
+    content: none;
+  }
 }
