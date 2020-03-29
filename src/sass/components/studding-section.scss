@@ -1,0 +1,245 @@
+.container {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.studding__title {
+  font-size: 20px;
+  color: $color-title;
+  font-family: $font-title;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-top: 52px;
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.studding__title::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-image: url(../images/icon1.png);
+}
+
+.studding__list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-left: 45px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border: 4px solid $color-background;
+  border-radius: 30px;
+}
+
+.icon__svg {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.orange {
+  background-color: $color-skin;
+  fill: $color-orange;
+}
+
+.red {
+  background-color: $color-powder;
+  fill: $color-red;
+}
+
+.purple {
+  background-color: $color-sky;
+  fill: $color-purple;
+}
+
+.green {
+  background-color: $color-mint;
+  fill: $color-green;
+}
+
+.features__text {
+  font-size: 14px;
+  color: $color-text;
+  font-family: $font-text;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+/*Tablet*/
+
+@media screen and (min-width: 768px) {
+  .studding {
+    margin-bottom: 45px;
+  }
+
+  .container {
+    max-width: 660px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: start;
+  }
+
+  .studding__title {
+    font-size: 33px;
+    margin-top: 66px;
+    margin-bottom: 48px;
+  }
+
+  .studding__title::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 18px;
+    background-repeat: no-repeat;
+    background-image: url(../images/icon2.png);
+  }
+
+  .features {
+    width: 256px;
+    margin-right: 20px;
+    margin-bottom: 36px;
+  }
+
+  .features:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .features:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  .features__text {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+  }
+}
+
+/*Laptop*/
+
+@media screen and (min-width: 1350px) {
+  .container {
+    min-width: 1300px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .studding {
+    background-color: $color-background-laptop;
+    padding-bottom: 109px;
+    padding-top: 109px;
+  }
+
+  .studding__title {
+    margin-top: 0;
+    margin-bottom: 66px;
+  }
+
+  .studding__list {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .features {
+    width: 325px;
+    margin-right: 0px;
+    margin-bottom: 62px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .features::before {
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: -110%;
+    width: 325px;
+    height: 270%;
+    border-width: 1px;
+    border-color: $color-line;
+    border-style: dashed;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .features:last-child::after {
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: -110%;
+    left: 100%;
+    width: 100%;
+    height: 270%;
+    border-width: 1px;
+    border-color: $color-line;
+    border-style: dashed;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .features:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .features:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .features:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+
+  .features__text {
+    margin-top: 36px;
+    font-size: 18px;
+  }
+
+  .icon {
+    width: 96px;
+    height: 96px;
+    border-radius: 60px;
+    border: $color-background-laptop;
+  }
+}
