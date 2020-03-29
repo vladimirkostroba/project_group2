@@ -1,0 +1,69 @@
+@media screen and (min-width: 768px) {
+  .tranning__title-overlay {
+    padding-bottom: 70px;
+    justify-content: left;
+  }
+
+  .tranning__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 75px;
+  }
+
+  .tranning__item {
+    flex-basis: calc(100% / 2 - 20px);
+    margin-right: 20px;
+  }
+
+  .tranning__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .tranning__section {
+    padding-top: 70px;
+  }
+
+  /* SVG icon */
+
+  .icon__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/icons/target-logo-tablet.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* Text */
+
+  .tranning__title {
+    text-align: left;
+    font-size: 33px;
+  }
+
+  .tranning__subtitle {
+    font-size: 30px;
+  }
+
+  /* Cart */
+
+  .cart-styles {
+    width: 300px;
+    height: 300px;
+  }
+
+  .cart-styles__text--border {
+    width: 260px;
+    height: 260px;
+    border: 1px dashed #ffffff;
+  }
+}
