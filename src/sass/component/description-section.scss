@@ -12,7 +12,7 @@ body {
 
 .description__content--image {
   display: inline-block;
-  width: 280px;
+  width: 240px;
   height: 320px;
   content: '';
   background-image: url(../images/description-section/children.png);
@@ -226,9 +226,9 @@ body {
   .program::before {
     position: absolute;
     width: 5px;
-    height: 60px;
+    height: 54px;
     left: 120px;
-    top: 50px;
+    top: 45px;
     background-image: url(../images/description-section/verticalline-desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
