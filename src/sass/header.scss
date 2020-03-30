@@ -129,6 +129,12 @@
   }
 
   .baner {
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    );
+
     min-height: 600px;
     background-image: url(../images/baner/mob.png);
     background-repeat: no-repeat;
@@ -173,12 +179,20 @@
 
 @media (min-width: 768px) {
   .header {
-    max-width: 690px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .baner {
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    );
+
     min-height: 600px;
     background-image: url(../images/baner/tablet.png);
     background-repeat: no-repeat;
@@ -232,6 +246,12 @@
 
 @media (min-width: 1350px) {
   .baner {
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    );
+
     min-height: 970px;
     background-image: url(../images/baner/desctop.png);
     background-repeat: no-repeat;
@@ -309,6 +329,10 @@
   }
 
   .menu-icon-wrapper {
+    display: none;
+  }
+
+  .header__burger {
     display: none;
   }
 }
