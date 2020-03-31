@@ -2,13 +2,13 @@ body {
   margin: 0px;
 }
 
-.container {
-  max-width: 280px;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
+// .container {
+//   max-width: 280px;
+//   padding-right: 20px;
+//   padding-left: 20px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
 
 .description__content--image {
   display: inline-block;
@@ -26,11 +26,11 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 660px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+  // .container {
+  //   max-width: 660px;
+  //   padding-left: 20px;
+  //   padding-right: 20px;
+  // }
 
   .description__content--image {
     display: inline-block;
@@ -48,12 +48,12 @@ body {
   }
 }
 
-@media screen and (min-width: 1350px) {
-  .container {
-    max-width: 1300px;
-    padding-left: 0;
-    padding-right: 0;
-  }
+@media screen and (min-width: 1300px) {
+  // .container {
+  //   max-width: 1300px;
+  //   padding-left: 0;
+  //   padding-right: 0;
+  // }
 }
 
 .img {
@@ -100,7 +100,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1300px) {
   .description__cont {
     display: flex;
     flex-direction: row-reverse;
@@ -212,7 +212,7 @@ body {
     background-size: contain;
   }
 }
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1300px) {
   .program {
     position: relative;
     font-size: 25px;
