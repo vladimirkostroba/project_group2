@@ -154,14 +154,14 @@
 
 /*Laptop*/
 
-@media screen and (min-width: 1350px) {
-  .container {
-    min-width: 1300px;
-    padding-left: 0;
-    padding-right: 0;
-    margin-right: auto;
-    margin-left: auto;
-  }
+@media screen and (min-width: 1300px) {
+  // .container {
+  //   min-width: 1300px;
+  //   padding-left: 0;
+  //   padding-right: 0;
+  //   margin-right: auto;
+  //   margin-left: auto;
+  // }
 
   .studding {
     background-color: $color-background-laptop;
