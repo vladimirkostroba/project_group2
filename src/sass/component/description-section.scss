@@ -2,14 +2,6 @@ body {
   margin: 0px;
 }
 
-// .container {
-//   max-width: 280px;
-//   padding-right: 20px;
-//   padding-left: 20px;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-
 .description__content--image {
   display: inline-block;
   width: 240px;
@@ -26,12 +18,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  // .container {
-  //   max-width: 660px;
-  //   padding-left: 20px;
-  //   padding-right: 20px;
-  // }
-
   .description__content--image {
     display: inline-block;
     width: 620px;
@@ -49,37 +35,31 @@ body {
 }
 
 @media screen and (min-width: 1300px) {
-  // .container {
-  //   max-width: 1300px;
-  //   padding-left: 0;
-  //   padding-right: 0;
-  // }
-}
+  .img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 
-.img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+  .description__about {
+    position: relative;
+    margin-top: 20px;
+    padding-bottom: 10px;
+  }
 
-.description__about {
-  position: relative;
-  margin-top: 20px;
-  padding-bottom: 10px;
-}
-
-.description__about::before {
-  position: absolute;
-  top: -10px;
-  display: block;
-  content: '';
-  width: 18px;
-  height: 13px;
-  color: $color-orange;
-  background-image: url(../images/description-section/quote1.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left;
+  .description__about::before {
+    position: absolute;
+    top: -10px;
+    display: block;
+    content: '';
+    width: 18px;
+    height: 13px;
+    color: $color-orange;
+    background-image: url(../images/description-section/quote1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
 }
 
 @media screen and (min-width: 768px) {
